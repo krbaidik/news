@@ -146,20 +146,20 @@ class newsController extends Controller
 
 
 
-    // public function trash(){
-    //     $trash = newsfeed::onlyTrashed()->get();
-    //     return view('trash',['trash'=>$trash]);
-    // }
+    public function trash(){
+        $trash = newsfeed::onlyTrashed()->get();
+        return view('trash',['trash'=>$trash]);
+    }
 
 
-    //  public function restore($id){
-    //     $trash = newsfeed::onlyTrashed()->find($id)->restore();
-    //     return redirect('trash');
-    // }
+     public function restore($id){
+        $trash = newsfeed::onlyTrashed()->find($id)->restore();
+        return redirect('trash');
+    }
 
 
-    // public function p_delete($id){
-    //     $trash = newsfeed::onlyTrashed()->find($id)->forceDelete();
-    //     return redirect('trash');
-    // }
+    public function p_delete($id){
+        $trash = newsfeed::onlyTrashed()->find($id)->forceDelete();
+        return redirect('trash');
+    }
 }

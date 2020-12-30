@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Trash</title>
@@ -21,4 +21,4 @@
 	</table>
 
 </body>
-</html> -->
+</html>

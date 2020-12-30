@@ -36,6 +36,6 @@ Route::get('/deletecategory/{id}', 'newsController@deletecategory')->name('delet
 Route::get('/deletenews/{id}', 'newsController@deletenews')->name('deletenews');
 
 
-// Route::get('/trash', 'newsController@trash')->name('trash');
-// Route::get('/restore/{id}', 'newsController@restore')->name('restore');
-// Route::get('/p_delete/{id}', 'newsController@p_delete')->name('p_delete');
+Route::get('/trash', 'newsController@trash')->name('trash');
+Route::get('/restore/{id}', 'newsController@restore')->name('restore');
+Route::get('/p_delete/{id}', 'newsController@p_delete')->name('p_delete');
